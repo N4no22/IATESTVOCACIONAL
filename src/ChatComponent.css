@@ -1,0 +1,108 @@
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+}
+
+.user-message,
+.ai-message {
+  max-width: 75%;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 20px;
+  font-family: 'Consolas', monospace;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.ai-message {
+  align-self: flex-start;
+  background-color: #28a745;
+  color: white;
+  box-shadow: 0 2px 4px rgba(40, 167, 69, 0.2);
+}
+
+#chat-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#prompt {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-family: 'Consolas', monospace;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-family: 'Consolas', monospace;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.action-button {
+  margin: 5px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-family: 'Consolas', monospace;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.title {
+  background: linear-gradient(90deg, #0056b3, #00c853);
+  font-family: 'Consolas', monospace;
+  font-size: 3rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 20px;
+  text-align: center;
+}
