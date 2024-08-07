@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import './ChatComponent.css'; 
 
-const genAi = new GoogleGenerativeAI('AIzaSyAdvDn2qjscfEKvgNtIH9i_wpdlnBhIrXI');
+const genAi = new GoogleGenerativeAI(); //APIKEY
 const model = genAi.getGenerativeModel({ model: 'gemini-pro' });
 
 
