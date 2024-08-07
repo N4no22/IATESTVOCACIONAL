@@ -8,8 +8,8 @@ const Bubbles = () => {
 
     for (let i = 0; i < burbujaCount; i++) {
       const span = document.createElement('span');
-      const size = Math.random() * 20 + 10; // Tamaño aleatorio entre 10 y 30px
-      const posX = Math.random() * 100; // Posición X aleatoria en porcentaje
+      const size = Math.random() * 22 + 10; // Tamaño aleatorio entre 10 y 30px
+      const posX = Math.random() * 101; // Posición X aleatoria en porcentaje
       const delay = Math.random() * 15; // Retraso aleatorio para la animación
       const duration = Math.random() * 10 + 5; // Duración aleatoria de la animación
 
